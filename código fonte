@@ -1,0 +1,15 @@
+def piramide(n):
+    base = int((n*2)-1)
+    aux = 1
+    under = base//2
+    
+    for i in range(1, n+1):
+        print('_' * under, end='')
+        print('*' * aux, end='')
+        print('_' * under)
+        aux +=2
+        under-=1
+    
+n = int(input("n = "))
+piramide(n)
+
